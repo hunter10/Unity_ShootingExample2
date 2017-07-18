@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{C4436FF3-E2E8-F7BC-5929-DB6D6AEC1203}|">
+  <MonoDevelop.Ide.ItemProperties.KnowZero PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AllyShip.cs">
+    <Files>
+      <File FileName="Assets/Scripts/DontDestroy.cs" Line="12" Column="31" />
+      <File FileName="Assets/Scripts/AllyShip.cs" Line="43" Column="64" />
+      <File FileName="Assets/Scripts/Classes.cs" Line="25" Column="30" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
