@@ -15,6 +15,11 @@ public class AllyShip : Ship, IAlly {
     public GameObject damPrefab;
     public GameObject hpBar;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Start()
     {
         weapons.Add(missileWeapon);
@@ -27,6 +32,11 @@ public class AllyShip : Ship, IAlly {
         if(Input.GetKeyDown("a"))
         {
             DealDamage(3);
+        }
+
+        if(Input.GetKeyDown("s"))
+        {
+            GameManager.Instance.AddScore(5);
         }
     }
 
@@ -73,7 +83,9 @@ public class AllyShip : Ship, IAlly {
         set
         {
             Score = value;
+            
             // UIManager 스코어 업데이트
+            UIManager.Instance.UpdateScore(Score);
         }
     }
     public void AllyMethod()

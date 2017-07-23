@@ -98,4 +98,9 @@ public class GameManager : MonoBehaviour {
 			yield return null;
 		}
 	}
+
+    public void AddScore(int amount)
+    {
+        AllyShip.Instance.thisShipScore = AllyShip.Instance.thisShipScore + amount;
+    }
 }
