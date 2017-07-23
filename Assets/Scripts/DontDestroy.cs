@@ -18,7 +18,9 @@ public class DontDestroy : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
+        /*
         if(Input.GetKeyDown("a")){
             SceneManager.LoadScene("Scene2");
         }
@@ -26,5 +28,6 @@ public class DontDestroy : MonoBehaviour {
 		{
 			SceneManager.LoadScene("Scene1");
 		}
+		*/
 	}
 }
