@@ -29,6 +29,6 @@ public class MissileControl : MonoBehaviour {
         thisWeapon.WeaponFunc(other.gameObject);
         Destroy(gameObject); 
 
-        //Debug.Log("Collision!!");
+        Debug.Log("Collision!!");
     }
 }
