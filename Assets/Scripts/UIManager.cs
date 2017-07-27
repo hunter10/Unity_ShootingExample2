@@ -20,6 +20,9 @@ public class UIManager : MonoBehaviour {
     public List<SellItem> itemList = new List<SellItem>();
     public GameObject shopObj;
 
+    public int[] crystalNumForChan;
+    public Dropdown CrystalDropdown;
+
     void Awake()
     {
         Instance = this;
@@ -27,7 +30,11 @@ public class UIManager : MonoBehaviour {
 
     private void Start()
     {
+<<<<<<< HEAD
         SetItem();
+=======
+        SetDropDown();
+>>>>>>> e9cb2cff36fa1f8941b72c323110c9ed70f5de8c
     }
 
     public void UpdateScore(int score)
@@ -35,6 +42,7 @@ public class UIManager : MonoBehaviour {
         scoreText.text = "Score : " + score;
     }
 
+<<<<<<< HEAD
     void SetItem()
     {
         for(int i=0; i<itemList.Count; i++)
@@ -59,5 +67,39 @@ public class UIManager : MonoBehaviour {
             go.transform.SetParent(scrollTrans);
             go.transform.localScale = Vector3.one;
         }
+=======
+    public void SoundToggle(Toggle tog)
+    {
+        if(tog.isOn)
+        {
+            if(tog.name == "SoundOn")
+            {
+                Debug.Log("Sound on");
+            }
+            else 
+            {
+                Debug.Log("Sound off");
+            }
+        }
+    }
+
+    void SetDropDown()
+    {
+        CrystalDropdown.options.Clear();
+        for (int i = 0; i < crystalNumForChan.Length; i++)
+        {
+            Dropdown.OptionData data = new Dropdown.OptionData{
+                text = crystalNumForChan[i].ToString()
+            };
+            CrystalDropdown.options.Add(data);
+
+        }
+        CrystalDropdown.captionText.text = crystalNumForChan[0].ToString();
+    }
+
+    public void DropDownChanged(Dropdown drop)
+    {
+        Debug.Log("Selected value is " + crystalNumForChan[drop.value]);
+>>>>>>> e9cb2cff36fa1f8941b72c323110c9ed70f5de8c
     }
 }

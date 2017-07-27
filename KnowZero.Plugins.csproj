@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Missile Systems\instructions.txt" />
+    <None Include="Assets\Sound\8-Bit_Action_Free\Readme.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\iTweenEditor\README.txt" />

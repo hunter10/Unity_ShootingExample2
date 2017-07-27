@@ -1,13 +1,15 @@
 ﻿<Properties StartupConfiguration="{C4436FF3-E2E8-F7BC-5929-DB6D6AEC1203}|">
   <MonoDevelop.Ide.ItemProperties.KnowZero PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AllyShip.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SoundScript.cs">
     <Files>
       <File FileName="Assets/Scripts/DontDestroy.cs" Line="22" Column="5" />
       <File FileName="Assets/Scripts/EnemyShip.cs" Line="12" Column="22" />
       <File FileName="Assets/Scripts/Classes.cs" Line="10" Column="22" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="88" Column="41" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="16" Column="36" />
       <File FileName="Assets/Scripts/HpChangeColor.cs" Line="23" Column="34" />
-      <File FileName="Assets/Scripts/AllyShip.cs" Line="36" Column="25" NotebookId="1" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="60" Column="53" />
+      <File FileName="Assets/Scripts/SoundScript.cs" Line="34" Column="15" />
+      <File FileName="Assets/Scripts/AllyShip.cs" Line="36" Column="1" NotebookId="1" />
       <File FileName="Assets/Scripts/AllyController.cs" Line="18" Column="32" NotebookId="1" />
       <File FileName="Assets/Scripts/MissileControl.cs" Line="29" Column="47" NotebookId="1" />
     </Files>
