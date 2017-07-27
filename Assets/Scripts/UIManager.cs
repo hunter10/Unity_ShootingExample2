@@ -30,11 +30,8 @@ public class UIManager : MonoBehaviour {
 
     private void Start()
     {
-<<<<<<< HEAD
         SetItem();
-=======
-        SetDropDown();
->>>>>>> e9cb2cff36fa1f8941b72c323110c9ed70f5de8c
+        //SetDropDown();
     }
 
     public void UpdateScore(int score)
@@ -42,7 +39,7 @@ public class UIManager : MonoBehaviour {
         scoreText.text = "Score : " + score;
     }
 
-<<<<<<< HEAD
+
     void SetItem()
     {
         for(int i=0; i<itemList.Count; i++)
@@ -61,13 +58,14 @@ public class UIManager : MonoBehaviour {
 
     void Update()
     {
-        if(Input.GetKeyDown("d"))
+        if (Input.GetKeyDown("d"))
         {
             GameObject go = (GameObject)Instantiate(buttonItem, scrollTrans.position, Quaternion.identity);
             go.transform.SetParent(scrollTrans);
             go.transform.localScale = Vector3.one;
         }
-=======
+    }
+
     public void SoundToggle(Toggle tog)
     {
         if(tog.isOn)
@@ -100,6 +98,5 @@ public class UIManager : MonoBehaviour {
     public void DropDownChanged(Dropdown drop)
     {
         Debug.Log("Selected value is " + crystalNumForChan[drop.value]);
->>>>>>> e9cb2cff36fa1f8941b72c323110c9ed70f5de8c
     }
 }

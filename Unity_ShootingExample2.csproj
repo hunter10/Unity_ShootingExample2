@@ -108,6 +108,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HpChangeColor.cs" />
     <Compile Include="Assets\Scripts\MissileControl.cs" />
+    <Compile Include="Assets\Scripts\SoundScript.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\iTweenEditor\Examples\StartAndStopTween.cs" />
     <Compile Include="Assets\iTweenEditor\Helper Classes\EventParamMappings.cs" />
@@ -120,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Missile Systems\instructions.txt" />
+    <None Include="Assets\Sound\8-Bit_Action_Free\Readme.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\iTweenEditor\README.txt" />

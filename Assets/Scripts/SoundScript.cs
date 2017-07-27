@@ -7,7 +7,22 @@ public class SoundSource
     public GameObject gameObj;
     public SoundSource(AudioClip a)
     {
-        
+        gameObj = new GameObject("SoundSource");
+        gameObj.tag = "AddedSound";
+        gameObj.AddComponent<AudioSource>();
+        gameObj.GetComponent<AudioSource>().clip = a;
+        gameObj.GetComponent<AudioSource>().mute = SoundScript.Instance.EffectSoundOn;
+        gameObj.AddComponent<DestroySound>();
+        gameObj.GetComponent<DestroySound>().Set(a.length);
+        gameObj.GetComponent<AudioSource>().Play();
+    }
+}
+
+public class DestroySound : MonoBehaviour
+{
+    public void Set(float time)
+    {
+        Destroy(gameObject, time);
     }
 }
 
@@ -110,7 +125,7 @@ public class SoundScript : MonoBehaviour {
             yield return StartCoroutine(FadeOutSound(fadeOutTime));
 
         thisAudio.Stop();
-        thisAudio.Volume = globalBasicVol;
+        thisAudio.volume = globalBasicVol;
         playbool = true;
     }
 	
@@ -135,12 +150,15 @@ public class SoundScript : MonoBehaviour {
     }
 
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         if(!GetComponent<AudioSource>().isPlaying && !playbool && GetAudio() != null)
         {
             playbool = true;
             StartCoroutine(PlayNextBGM(GetAudio(), true));
         }
 	}
+
+    
 }
 

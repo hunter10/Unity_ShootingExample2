@@ -69,3 +69,10 @@ public class BulletWeapon : WeaponClass{
         Debug.Log("This is Bullet's additional function");
     }
 }
+
+[System.Serializable]
+public class UserInfo
+{
+    public int score;
+    public int crystal;
+}
